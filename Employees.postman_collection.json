@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "5ed53861-3686-45db-87c0-280e948b1b19",
+		"name": "Employees",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37614964"
+	},
+	"item": [
+		{
+			"name": "findAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeName\": \"Employeer Examle\",\r\n    \"employeeRole\":\"ROLE\",\r\n    \"employeeDepartment\":\"Departament\",\r\n    \"employeeAdmissionData\":\"2024-01-21\",\r\n    \"employeeEmail\":\"exampleEmployeer@gmail.com\",\r\n    \"employeePhone\": \"(46) 99921-2075\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"employeeName\": \"Employeer Examle update\",\r\n    \"employeeRole\": \"ROLE\",\r\n    \"employeeDepartment\": \"Departament\",\r\n    \"employeeAdmissionData\": \"2024-01-21T00:00:00.000+00:00\",\r\n    \"employeeEmail\": \"exampleEmployeer@gmail.com\",\r\n    \"employeePhone\": \"(46) 99921-2075\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"employeeName\": \"Employeer Examle\",\r\n    \"employeeRole\": \"ROLE\",\r\n    \"employeeDepartment\": \"Departament\",\r\n    \"employeeAdmissionData\": \"2024-01-21T00:00:00.000+00:00\",\r\n    \"employeeEmail\": \"exampleEmployeer@gmail.com\",\r\n    \"employeePhone\": \"(46) 99921-2075\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
